@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile & To-do List</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOODPICKER ITF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card-container">
-        <div class="profile-section">
-            <div class="avatar-wrapper">
-                <img src="https://pbs.twimg.com/media/HTOIp9wasAM3HD_?format=jpg&name=large" alt="Profile Picture" id="avatar-img">
-            </div>
-            <h2 class="profile-name">Taz Tupsruri</h2>
-            <p class="student-id">student id : 69070084</p>
-            <p class="faculty">IT KMITL</p>
+  <nav class="navbar">
+    <div class="nav-student-id">69070084</div>
+    <div class="nav-title">FOODPICKER ITF</div>
+    <div class="nav-week">Week15</div>
+  </nav>
+
+  <main class="main-container">
+
+    <div class="food-card">
+      <div class="img-container">
+        <img id="food-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJGqep_3ExRtiz9zT2GyZawa1tjoUrW8yn63TbgNHjacZnfAKnTcVZoWN&s=10" alt="เมนูอาหาร">
+      </div>
+      <h2 id="food-name" class="food-name">ข้าวมันไก่</h2>
+      <p id="food-desc" class="food-desc">น้ำจิ้มเด็ด น้ำซุปร้อนๆ หอมนุ่ม</p>
       
-            <p class="bio">Do Something</p>
-            <p class="skills">SKILLS : DO SAME THING</p>
-
-            <a href="https://www.facebook.com/non.t.tsr" target="_blank" class="facebook-link">
-                <i class="fa-brands fa-facebook"></i> Facebook
-            </a>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="todo-section">
-            <h2 class="todo-title">To do List</h2>
-
-        <div class="input-group">
-            <input type="text" id="todo-input" placeholder="Enter tasks..." autocomplete="off">
-            <button id="add-btn">Add</button>
-        </div>
-
-        <ul id="todo-list" class="todo-list">
-            <li>
-                <span>clean</span>
-                <button class="del-btn">del</button>
-            </li>
-            <li>
-                <span>play</span>
-                <button class="del-btn">del</button>
-            </li>
-            <li>
-                <span>eat</span>
-                <button class="del-btn">del</button>
-            </li>
-            <li>
-                <span>coding</span>
-                <button class="del-btn">del</button>
-            </li>
-        </ul>
+      <div class="price-badge">
+        ราคา <span id="food-price">50-65</span> บาท
+      </div>
     </div>
-</div>
 
-    <script src="script.js"></script>
+    <button id="random-btn" class="btn-random">สุ่มเมนูอาหาร</button>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
